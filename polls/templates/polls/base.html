@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{% load static %} <!--or should this be "load staticfiles"? -->
+
+<html lang="en">
+<head>
+<title>{% block title %}MySite - Polls App{% endblock %}</title>
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" /> -->
+<!-- the next 3 lines are for Bootstrap -->	
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="container"><!-- for Bootstrap -->
+<!-- put content here -->
+{% block body %}This is the default content from base.html{% endblock %}
+</div>
+
+<!-- <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.
+</button>   
+<p id="demo"></p> -->
+
+<!-- the next 2 lines are for Bootstrap -->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
